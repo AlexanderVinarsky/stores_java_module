@@ -1,4 +1,4 @@
-package ru.cordell.stores.objects;
+package ru.cordell.stores.models;
 
 public class Goods {
     public String Code;

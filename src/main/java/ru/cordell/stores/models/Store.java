@@ -1,4 +1,6 @@
-package ru.cordell.stores.objects;
+package ru.cordell.stores.models;
+
+import ru.cordell.stores.models.Goods;
 
 import java.util.List;
 
