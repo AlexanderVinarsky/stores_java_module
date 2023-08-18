@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/api}" th:object="${request}">
+    <label for="address"> Enter name:</label>
+    <input type="text" th:field="*{address}" id="address"/>
+    <br>
+    <input type="submit" value="Отправить"/>
+</form>
+</body>
+</html>
