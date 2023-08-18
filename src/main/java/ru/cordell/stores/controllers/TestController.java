@@ -1,5 +1,6 @@
 package ru.cordell.stores.controllers;
 
+import jakarta.persistence.Persistence;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -42,6 +43,11 @@ public class TestController {
         String response = restTemplate.postForObject(url, test, String.class);
 
         System.out.println(response);
-        return "api";
+        return "prices";
+    }
+
+    @PostMapping("/test")
+    public ResponseEntity<HttpStatus> create(@RequestBody Request request) {
+        return ResponseEntity.ok(HttpStatus.OK);
     }
 }
